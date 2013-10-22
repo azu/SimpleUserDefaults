@@ -1,5 +1,6 @@
 language: objective-c
 before_script:
+ - brew update
  - brew uninstall xctool
  - brew install xctool
 script: xctool test -project SimpleUserDefaults.xcodeproj -scheme Tests -configuration Debug -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
