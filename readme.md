@@ -43,9 +43,9 @@ For more detail on [Example](Example).
 
 ## Benchmark
 
-* SimpleUserDefaults(This library)
-* Using NSUserDefaults directly.
-* [gangverk/GVUserDefaults](https://github.com/gangverk/GVUserDefaults "gangverk/GVUserDefaults")
+* SimpleUserDefaults(This library) - ``Simple``
+* Using NSUserDefaults directly. - ``Standard``
+* [gangverk/GVUserDefaults](https://github.com/gangverk/GVUserDefaults "gangverk/GVUserDefaults") - ``GVUserDefaults``
 
 ```
 :Name                                              :Total(s)  :Avg.(s)
