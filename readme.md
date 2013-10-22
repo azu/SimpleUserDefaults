@@ -1,11 +1,11 @@
-# SimpleUserDefaults
+# SimpleUserDefaults [![Build Status](https://travis-ci.org/azu/SimpleUserDefaults.png)](https://travis-ci.org/azu/SimpleUserDefaults)
 
-Simple ``NSUserDefaults`` manager
+Simple ``NSUserDefaults`` manager library.
 
 ## Installation
 
 ```ruby
-pod 'SimpleUserDefaults'
+pod 'SimpleUserDefaults', :git => 'https://github.com/azu/SimpleUserDefaults.git'
 ```
 
 ## Usage
