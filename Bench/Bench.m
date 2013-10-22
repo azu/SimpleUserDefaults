@@ -20,17 +20,22 @@
 @implementation Bench {
     SimpleConfig *simpleConfig;
     StandardConfig *standardConfig;
+    GVUserDefaults *gvUserDefaults;
 }
 
 - (void)setUp {
     [super setUp];
     simpleConfig = [[SimpleConfig alloc] init];
     standardConfig = [[StandardConfig alloc] init];
+    gvUserDefaults = [[GVUserDefaults alloc] init];
 }
 
 - (void)tearDown {
-    [super tearDown];
+    simpleConfig = nil;
+    standardConfig = nil;
+    gvUserDefaults = nil;
     [self resetNSUserDefaults];
+    [super tearDown];
 }
 
 - (void)resetNSUserDefaults {
@@ -42,14 +47,12 @@
 }
 
 + (NSUInteger)benchmarkRepeatCount {
-    return 10000;
+    return 1000;
 }
 
 #pragma mark - Simple
-- (void)benchSimpleUserDefaults_All {
-    SimpleConfig *config = simpleConfig;
-    config.name = @"String String";
-    NSString *getName = config.name;
+- (void)benchSimpleUserDefaults_init {
+    SimpleConfig *config = [[SimpleConfig alloc] init];
 }
 
 - (void)benchSimpleUserDefaults_read {
@@ -61,10 +64,8 @@
 }
 
 #pragma mark - Standard
-- (void)benchStandardUserDefaults_All {
-    StandardConfig *config = standardConfig;
-    config.name = @"String String";
-    NSString *getName = config.name;
+- (void)benchStandardUserDefaults_init {
+    StandardConfig *config = [[StandardConfig alloc] init];
 }
 
 - (void)benchStandardUserDefaults_read {
@@ -74,10 +75,18 @@
 - (void)benchStandardUserDefaults_write {
     standardConfig.name = @"String String";
 }
+
 #pragma mark - GVUserDefaults
-- (void)benchGVUserDefaults_All {
-    GVUserDefaults *config = [GVUserDefaults standardUserDefaults];
-    config.name = @"String String";
-    NSString *getName = config.name;
+- (void)benchGVUserDefaults_init{
+    GVUserDefaults *config = [[GVUserDefaults alloc] init];
 }
+- (void)benchGVUserDefaults_read {
+    gvUserDefaults.name;
+}
+
+- (void)benchGVUserDefaults_write {
+    gvUserDefaults.name = @"String String";
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
 @end

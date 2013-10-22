@@ -47,18 +47,20 @@ For more detail on [Example](Example).
 * Using NSUserDefaults directly.
 * [gangverk/GVUserDefaults](https://github.com/gangverk/GVUserDefaults "gangverk/GVUserDefaults")
 
-
 ```
 :Name                                              :Total(s)  :Avg.(s)
--[Bench test_benchSimpleUserDefaults_All]          0.00126    0.00000    (1/10000)
--[Bench test_benchSimpleUserDefaults_read]         0.00066    0.00000    (1/10000)
--[Bench test_benchSimpleUserDefaults_write]        0.00042    0.00000    (1/10000)
+-[Bench test_benchSimpleUserDefaults_init]         0.01163    0.00001    (1/1000)
+-[Bench test_benchSimpleUserDefaults_read]         0.00019    0.00000    (1/1000)
+-[Bench test_benchSimpleUserDefaults_write]        0.00020    0.00000    (1/1000)
 
--[Bench test_benchStandardUserDefaults_All]        0.00067    0.00000    (1/10000)
--[Bench test_benchStandardUserDefaults_read]       0.00076    0.00000    (1/10000)
--[Bench test_benchStandardUserDefaults_write]      0.00050    0.00000    (1/10000)
+-[Bench test_benchStandardUserDefaults_init]       0.00129    0.00000    (1/1000)
+-[Bench test_benchStandardUserDefaults_read]       0.00087    0.00000    (1/1000)
+-[Bench test_benchStandardUserDefaults_write]      0.00021    0.00000    (1/1000)
 
--[Bench test_benchGVUserDefaults_All]              0.13562    0.00001    (1/10000)
+-[Bench test_benchGVUserDefaults_init]             0.02315    0.00002    (1/1000)
+-[Bench test_benchGVUserDefaults_read]             0.00021    0.00000    (1/1000)
+-[Bench test_benchGVUserDefaults_write]            0.01373    0.00001    (1/1000)
+
 ```
 
 For more detail on [Bench](Bench).
