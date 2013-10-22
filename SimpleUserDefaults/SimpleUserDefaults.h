@@ -7,18 +7,8 @@
 
 
 @interface SimpleUserDefaults : NSObject
-
+#pragma mark - Config
 - (NSString *)prefixUserDefaultsKey;
-
-- (void)setObject:(id) object forKey:(NSString *) key;
-
-- (void)removeObjectForKey:(NSString *) key;
-
-- (id)objectForKey:(NSString *) key;
-
-- (id)objectForKeyedSubscript:(id <NSCopying>) key;
-
-- (void)setObject:(id) object forKeyedSubscript:(id <NSCopying>) key;
-
+#pragma mark - Observer
 - (void)addObserverSelector:(SEL) selector;
 @end

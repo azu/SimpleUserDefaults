@@ -34,7 +34,7 @@
     return [NSStringFromClass([self class]) stringByAppendingString:@"."];
 }
 
-- (NSString *)userDefaultsKey:(NSString *)key {
+- (NSString *)userDefaultsKey:(NSString *) key {
     return [[self prefixUserDefaultsKey] stringByAppendingString:key];
 }
 #pragma mark - Setters
@@ -60,10 +60,6 @@
     if ([(NSObject *)key isKindOfClass:[NSString class]]) {
         [[self userDefaults] setObject:object forKey:(NSString *)key];
     }
-}
-#pragma mark - delete
-- (void)removeObjectForKey:(NSString *) key {
-    [[self userDefaults] removeObjectForKey:key];
 }
 #pragma mark - KVO
 - (void)addObserverSelector:(SEL) selector {
