@@ -23,6 +23,7 @@
 		17B5C32BB75E44FDDB3B9492 /* SimpleUserDefaults.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleUserDefaults.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B5C46F164A0BDB5C0B65C6 /* SimpleUserDefaults-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleUserDefaults-Prefix.pch"; sourceTree = "<group>"; };
 		17B5C5BA6CEB6E175B1D6A3B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		17B5C7E21DBDC549480B4B91 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
 		17B5C7E24F38F5D59FCFACED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17B5C7E5624B3297F38561C8 /* SimpleUserDefaultsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleUserDefaultsTest.m; sourceTree = "<group>"; };
 		17B5C800048A79DB2E5320CB /* CustomPrefixConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPrefixConfig.m; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 				17B5CB2426CBD465BAB5CBE4 /* SimpleUserDefaults */,
 				17B5C12E966F0B6F0F505320 /* Tests */,
 				17B5C90A8701B73D319DA0DE /* Example */,
+				17B5C7E21DBDC549480B4B91 /* readme.md */,
 			);
 			sourceTree = "<group>";
 		};
