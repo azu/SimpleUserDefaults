@@ -5,7 +5,6 @@
 
 #import "ExampleConfig.h"
 
-
 @implementation ExampleConfig {
 
 }
@@ -19,7 +18,6 @@
 
     [self addObserverSelector:@selector(name)];
     [self addObserverSelector:@selector(hasBoolValue)];
-
     return self;
 }
 

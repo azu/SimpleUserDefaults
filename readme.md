@@ -37,6 +37,9 @@ ExampleConfig *exampleConfig = [[ExampleConfig alloc] init];
 exampleConfig.name = @"your name";
 // Automatically save name value as NSUserDefaults.
 ```
+
+For more detail on [Example](Example).
+
 ## Contributing
 
 1. Fork it!
