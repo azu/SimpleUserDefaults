@@ -1,4 +1,5 @@
-# SimpleUserDefaults [![Build Status](https://travis-ci.org/azu/SimpleUserDefaults.png)](https://travis-ci.org/azu/SimpleUserDefaults)
+# SimpleUserDefaults
+<!-- [![Build Status](https://travis-ci.org/azu/SimpleUserDefaults.png)](https://travis-ci.org/azu/SimpleUserDefaults) -->
 
 Simple ``NSUserDefaults`` manager library.
 

@@ -67,7 +67,7 @@
     NSString *keyPath = [self userDefaultsKey:selectorKey];
     id value = [self objectForKey:keyPath];
     if (value != nil) {
-        [self setValue:value forKeyPath:keyPath];
+        [self setValue:value forKeyPath:selectorKey];
     }
     [self addObserver:self forKeyPath:selectorKey options:NSKeyValueObservingOptionNew context:selector];
     [self.observeKeys addObject:selectorKey];
