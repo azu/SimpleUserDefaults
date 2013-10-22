@@ -41,6 +41,28 @@ exampleConfig.name = @"your name";
 
 For more detail on [Example](Example).
 
+## Benchmark
+
+* SimpleUserDefaults(This library)
+* Using NSUserDefaults directly.
+* [gangverk/GVUserDefaults](https://github.com/gangverk/GVUserDefaults "gangverk/GVUserDefaults")
+
+
+```
+:Name                                              :Total(s)  :Avg.(s)
+-[Bench test_benchSimpleUserDefaults_All]          0.00126    0.00000    (1/10000)
+-[Bench test_benchSimpleUserDefaults_read]         0.00066    0.00000    (1/10000)
+-[Bench test_benchSimpleUserDefaults_write]        0.00042    0.00000    (1/10000)
+
+-[Bench test_benchStandardUserDefaults_All]        0.00067    0.00000    (1/10000)
+-[Bench test_benchStandardUserDefaults_read]       0.00076    0.00000    (1/10000)
+-[Bench test_benchStandardUserDefaults_write]      0.00050    0.00000    (1/10000)
+
+-[Bench test_benchGVUserDefaults_All]              0.13562    0.00001    (1/10000)
+```
+
+For more detail on [Bench](Bench).
+
 ## Contributing
 
 1. Fork it!
