@@ -486,7 +486,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/\"/**";
-				VALID_ARCHS = "arm64 armv7";
+				VALID_ARCHS = "armv6 armv7";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -511,7 +511,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/\"/**";
-				VALID_ARCHS = "arm64 armv7";
+				VALID_ARCHS = "armv6 armv7";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
