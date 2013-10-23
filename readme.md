@@ -1,7 +1,9 @@
 # SimpleUserDefaults
 <!-- [![Build Status](https://travis-ci.org/azu/SimpleUserDefaults.png)](https://travis-ci.org/azu/SimpleUserDefaults) -->
 
-Simple ``NSUserDefaults`` manager library.
+Simple ``NSUserDefaults`` manager library - NSUserDefaults access via properties.
+
+This library use KVO instead of ``objc/runtime.h``.
 
 ## Installation
 
