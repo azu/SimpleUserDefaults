@@ -34,7 +34,6 @@
 
 - (void)testDefaultsInitialValue {
     ExampleConfig *exampleConfig = [[ExampleConfig alloc] init];
-    NSLog(@"exampleConfig.name = %@", exampleConfig.name);
     STAssertNil(exampleConfig.name, @"Defaults should be nil");
     STAssertFalse(exampleConfig.hasBoolValue, @"Defaults should be NO");
 }
