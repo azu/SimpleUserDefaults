@@ -6,8 +6,10 @@
 #import <Foundation/Foundation.h>
 #import "SimpleUserDefaults.h"
 
+@class CodingObject;
 
 @interface ExampleConfig : SimpleUserDefaults
 @property (nonatomic) NSString *name;
+@property (nonatomic) CodingObject *codingObject;
 @property (nonatomic) BOOL hasBoolValue;
 @end

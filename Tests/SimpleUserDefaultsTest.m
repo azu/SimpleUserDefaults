@@ -6,6 +6,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import "ExampleConfig.h"
 #import "CustomPrefixConfig.h"
+#import "CodingObject.h"
 
 @interface SimpleUserDefaultsTest : SenTestCase
 @end
@@ -18,8 +19,8 @@
 }
 
 - (void)tearDown {
-    [super tearDown];
     [self resetNSUserDefaults];
+    [super tearDown];
 }
 
 - (void)resetNSUserDefaults {
@@ -30,8 +31,10 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
+
 - (void)testDefaultsInitialValue {
     ExampleConfig *exampleConfig = [[ExampleConfig alloc] init];
+    NSLog(@"exampleConfig.name = %@", exampleConfig.name);
     STAssertNil(exampleConfig.name, @"Defaults should be nil");
     STAssertFalse(exampleConfig.hasBoolValue, @"Defaults should be NO");
 }
@@ -51,6 +54,22 @@
     exampleConfig.name = newValue;
     STAssertEqualObjects(exampleConfig.name, newValue, @"should be write new Value");
     STAssertEqualObjects(exampleConfig.name, [defaults objectForKey:userDefaultsKey], @"should be same");
+}
+
+- (void)testNSCodingObject {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *userDefaultsKey = [NSStringFromClass(
+        [ExampleConfig class]) stringByAppendingString:@".codingObjectData"]; // <= "Data"
+
+    ExampleConfig *exampleConfig = [[ExampleConfig alloc] init];
+    CodingObject *newObject = [[CodingObject alloc] init];
+    newObject.name = @"SSS";
+    newObject.date = [NSDate date];
+    exampleConfig.codingObject = newObject;
+    STAssertTrue([exampleConfig.codingObject isEqualToObject:newObject], @"should equal to newObject");
+
+    NSData *archivedData = [NSKeyedArchiver archivedDataWithRootObject:newObject];
+    STAssertTrue([archivedData isEqualToData:[defaults objectForKey:userDefaultsKey]], @"should be equal");
 }
 
 - (void)testPrimitiveValue {

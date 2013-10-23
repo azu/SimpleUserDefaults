@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17B5C08D592D18C28A295CE3 /* CodingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CB8EECC118B750A4BA15 /* CodingObject.m */; };
 		17B5C20FED1A9ABFD96257C9 /* SimpleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CB94E4AAD89BCF7C57E3 /* SimpleConfig.m */; };
 		17B5C22D3F422FB7F1B41356 /* StandardConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C992E0F4E0827127169B /* StandardConfig.m */; };
 		17B5C2801D00CB07E59B0F62 /* GVUserDefaults+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C3DDC37FB0EBDBB10FC4 /* GVUserDefaults+Config.m */; };
@@ -17,6 +18,7 @@
 		17B5C8BF8B986367448FCF64 /* SimpleUserDefaultsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C7E5624B3297F38561C8 /* SimpleUserDefaultsTest.m */; };
 		17B5C92E7ABA4971BEA5358A /* SimpleUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CC7762C695D05252BE19 /* SimpleUserDefaults.m */; };
 		17B5C9EFCBC0A74F3E512302 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CD5D8996EC061DCE292E /* Foundation.framework */; };
+		17B5CC002F24B4C9E10A9859 /* CodingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CB8EECC118B750A4BA15 /* CodingObject.m */; };
 		17B5CC9D18A0DE1F7B75B14F /* ExampleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C0B55A80D944205FF532 /* ExampleConfig.m */; };
 		17B5CEE4A180E682804EC628 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CE561ABD65F69CDE4B85 /* UIKit.framework */; };
 		4307203C25EF4F33A882E2E3 /* libPods-Bench.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA61F0B300941D3A0CDD735 /* libPods-Bench.a */; };
@@ -53,7 +55,9 @@
 		17B5C86DE0B8C34D5C43B170 /* SimpleUserDefaults-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "SimpleUserDefaults-Info.plist"; sourceTree = "<group>"; };
 		17B5C983C67BA45E9FE544B0 /* StandardConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardConfig.h; sourceTree = "<group>"; };
 		17B5C992E0F4E0827127169B /* StandardConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardConfig.m; sourceTree = "<group>"; };
+		17B5CA796CED2C9C5F36655D /* CodingObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodingObject.h; sourceTree = "<group>"; };
 		17B5CB6509DC2A6CC815733A /* SimpleUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleUserDefaults.h; sourceTree = "<group>"; };
+		17B5CB8EECC118B750A4BA15 /* CodingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodingObject.m; sourceTree = "<group>"; };
 		17B5CB94E4AAD89BCF7C57E3 /* SimpleConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleConfig.m; sourceTree = "<group>"; };
 		17B5CC7762C695D05252BE19 /* SimpleUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleUserDefaults.m; sourceTree = "<group>"; };
 		17B5CD5D8996EC061DCE292E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -137,6 +141,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		17B5C8C4884709FA953F5976 /* CodingModel */ = {
+			isa = PBXGroup;
+			children = (
+				17B5CA796CED2C9C5F36655D /* CodingObject.h */,
+				17B5CB8EECC118B750A4BA15 /* CodingObject.m */,
+			);
+			path = CodingModel;
+			sourceTree = "<group>";
+		};
 		17B5C90A8701B73D319DA0DE /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +157,7 @@
 				17B5CDD00FB0BD531E012637 /* ExampleConfig.h */,
 				17B5C800048A79DB2E5320CB /* CustomPrefixConfig.m */,
 				17B5C315D0C094C44A344984 /* CustomPrefixConfig.h */,
+				17B5C8C4884709FA953F5976 /* CodingModel */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -242,7 +256,7 @@
 				ORGANIZATIONNAME = azu;
 				TargetAttributes = {
 					738766351816CA5B009CE6B9 = {
-						TestTargetID = 17B5CBB8172875F81A1BC89B;
+						TestTargetID = 17B5CBB8172875F81A1BC89B /* SimpleUserDefaults */;
 					};
 				};
 			};
@@ -325,6 +339,7 @@
 				17B5CC9D18A0DE1F7B75B14F /* ExampleConfig.m in Sources */,
 				17B5C8BF8B986367448FCF64 /* SimpleUserDefaultsTest.m in Sources */,
 				17B5C5D1F72AC3D4251E5D55 /* CustomPrefixConfig.m in Sources */,
+				17B5CC002F24B4C9E10A9859 /* CodingObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +352,7 @@
 				17B5C22D3F422FB7F1B41356 /* StandardConfig.m in Sources */,
 				17B5C92E7ABA4971BEA5358A /* SimpleUserDefaults.m in Sources */,
 				17B5C2801D00CB07E59B0F62 /* GVUserDefaults+Config.m in Sources */,
+				17B5C08D592D18C28A295CE3 /* CodingObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
