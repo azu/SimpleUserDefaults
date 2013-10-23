@@ -43,6 +43,9 @@ exampleConfig.name = @"your name";
 
 For more detail on [Example](Example).
 
+* Custom Object(NSCoding) handling
+* Custom saving key path of NSUserDefaults.
+
 ## Benchmark
 
 * SimpleUserDefaults(This library) - ``Simple``
