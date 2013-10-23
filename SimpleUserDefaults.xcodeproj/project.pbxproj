@@ -242,7 +242,7 @@
 				ORGANIZATIONNAME = azu;
 				TargetAttributes = {
 					738766351816CA5B009CE6B9 = {
-						TestTargetID = 17B5CBB8172875F81A1BC89B /* SimpleUserDefaults */;
+						TestTargetID = 17B5CBB8172875F81A1BC89B;
 					};
 				};
 			};
@@ -256,8 +256,6 @@
 			mainGroup = 17B5C28A047D57FE8FC00979;
 			productRefGroup = 17B5C395EEB7B3339FC827DB /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				17B5CBB8172875F81A1BC89B /* SimpleUserDefaults */,
@@ -476,7 +474,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4332B563D2B6459BBD77E5AA /* Pods-Bench.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -488,6 +486,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/\"/**";
+				VALID_ARCHS = "arm64 armv7";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -496,7 +495,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4332B563D2B6459BBD77E5AA /* Pods-Bench.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -512,6 +511,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/\"/**";
+				VALID_ARCHS = "arm64 armv7";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -544,6 +544,7 @@
 				738766481816CA5B009CE6B9 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,13 @@
+PODS:
+  - BenchmarkTestCase (1.0)
+  - GVUserDefaults (0.9.2)
+
+DEPENDENCIES:
+  - BenchmarkTestCase
+  - GVUserDefaults
+
+SPEC CHECKSUMS:
+  BenchmarkTestCase: 3a8fe05a669b9cc91be46883c9efe57cd811e3be
+  GVUserDefaults: 736b928d6281f506045f1109846841ea2f80b854
+
+COCOAPODS: 0.26.2
