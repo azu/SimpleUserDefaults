@@ -8,7 +8,7 @@ This library use KVO instead of ``objc/runtime.h``.
 ## Installation
 
 ```ruby
-pod 'SimpleUserDefaults', :git => 'https://github.com/azu/SimpleUserDefaults.git'
+pod 'SimpleUserDefaults'
 ```
 
 ## Usage
