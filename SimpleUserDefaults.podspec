@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SimpleUserDefaults"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Simple NSUserDefaults manager library -  Access NSUserDefaults key using property."
   s.homepage     = "https://github.com/azu/SimpleUserDefaults"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
