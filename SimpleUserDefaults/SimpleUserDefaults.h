@@ -7,8 +7,11 @@
 
 
 @interface SimpleUserDefaults : NSObject
+#pragma mark - Util
+- (NSString *)userDefaultsKey:(NSString *) key;
 #pragma mark - Config
 - (NSString *)prefixUserDefaultsKey;
 #pragma mark - Observer
+
 - (void)addObserverSelector:(SEL) selector;
 @end

@@ -256,7 +256,7 @@
 				ORGANIZATIONNAME = azu;
 				TargetAttributes = {
 					738766351816CA5B009CE6B9 = {
-						TestTargetID = 17B5CBB8172875F81A1BC89B /* SimpleUserDefaults */;
+						TestTargetID = 17B5CBB8172875F81A1BC89B;
 					};
 				};
 			};
