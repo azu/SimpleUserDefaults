@@ -34,21 +34,29 @@
     return [NSStringFromClass([self class]) stringByAppendingString:@"."];
 }
 
+- (NSString *)userDefaultsKeyForSelector:(SEL) sel {
+    return [self userDefaultsKey:NSStringFromSelector(sel)];
+}
+
 - (NSString *)userDefaultsKey:(NSString *) key {
     return [[self prefixUserDefaultsKey] stringByAppendingString:key];
 }
+
 #pragma mark - Setters
+
 - (void)setObject:(id) object forKey:(NSString *) key {
     [[self userDefaults] setObject:object forKey:key];
     [[self userDefaults] synchronize];
 }
 
 #pragma mark - Getters
+
 - (id)objectForKey:(NSString *) key {
     return [[self userDefaults] objectForKey:key];
 }
 
 #pragma mark - Object Subscriting
+
 - (id)objectForKeyedSubscript:(id <NSCopying>) key {
     if ([(NSObject *)key isKindOfClass:[NSString class]]) {
         return [[self userDefaults] objectForKey:(NSString *)key];
@@ -61,10 +69,12 @@
         [[self userDefaults] setObject:object forKey:(NSString *)key];
     }
 }
+
 #pragma mark - KVO
+
 - (void)addObserverSelector:(SEL) selector {
     NSString *selectorKey = NSStringFromSelector(selector);
-    NSString *keyPath = [self userDefaultsKey:selectorKey];
+    NSString *keyPath = [self userDefaultsKeyForSelector:selector];
     id value = [self objectForKey:keyPath];
     if (value != nil) {
         [self setValue:value forKeyPath:selectorKey];
